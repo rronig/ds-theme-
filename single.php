@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+<?php
+if ( has_category('ama') ) {
+    get_template_part('single', 'ama'); // Loads single-ama.php
+    exit;
+}
+?>
+
 <div class="primary">
     <div class="main">
         <div class="container">
